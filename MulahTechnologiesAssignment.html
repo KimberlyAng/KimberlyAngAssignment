@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulah Technologies Assessment</title>
+    <style>
+        table{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table border="2">
+        <script>
+            const t1 = [
+                { index: 'A1', value: 41 },
+                { index: 'A2', value: 18 },
+                { index: 'A3', value: 21 },
+                { index: 'A4', value: 63 },
+                { index: 'A5', value: 2 },
+                { index: 'A6', value: 53 },
+                { index: 'A7', value: 5 },
+                { index: 'A8', value: 57 },
+                { index: 'A9', value: 60 },
+                { index: 'A10', value: 93 },
+                { index: 'A11', value: 28 },
+                { index: 'A12', value: 3 },
+                { index: 'A13', value: 90 },
+                { index: 'A14', value: 39 },
+                { index: 'A15', value: 80 },
+                { index: 'A16', value: 88 },
+                { index: 'A17', value: 49 },
+                { index: 'A18', value: 60 },
+                { index: 'A19', value: 26 },
+                { index: 'A20', value: 28 }
+            ];
+
+            document.write("<tr>");
+            document.write("<td  colspan='2' width='300'>");
+            document.write("<h1> Table 1 </h1> </td> </tr>");
+
+            document.write("<tr>");
+            document.write("<th>Index#</th>");
+            document.write("<th>Value</th>");
+            document.write("</tr>");
+
+            for(i=0;i<t1.length;i++){
+                document.write("<tr>");
+                document.write("<td>" + t1[i].index + "</td>");
+                document.write("<td>" + t1[i].value + "</td>");
+                document.write("</tr>");
+            }
+            
+        </script>
+        
+    </table>
+
+    <br><br><br>
+
+    <table border="2">
+        <tr>
+            <td  colspan="2" width="300">
+                <h1>
+                    Table 2
+                </h1>
+            </td>
+        </tr>
+        <script>
+            document.write("<tr>");
+            document.write("<th>Category</th>");
+            document.write("<th>Value</th>");
+            document.write("</tr>");
+
+            for (i=0;i<t1.length;i++) {
+                if (t1[i].index == "A5") {
+                    var v5 = parseInt(t1[i].value);
+                }
+                else if (t1[i].index == "A20") {
+                    var v20 = parseInt(t1[i].value);
+                }
+                else if (t1[i].index == "A15") {
+                    var v15= parseInt(t1[i].value);
+                }
+                else if (t1[i].index == "A7") {
+                    var v7 = parseInt(t1[i].value);
+                }
+                else if (t1[i].index == "A13") {
+                    var v13 = parseInt(t1[i].value);
+                }
+                else if (t1[i].index == "A12") {
+                    var v12 = parseInt(t1[i].value);
+                }
+                else {
+                    continue
+                }
+
+            }
+            
+            var alpha = v5+v20;
+            var beta = v15/v7;
+            var charlie = v13*v12;
+
+            document.write("<tr>");
+            document.write("<td>Alpha</td>");
+            document.write("<td>" + alpha + "</td>");
+            document.write("</tr>");
+
+            document.write("<tr>");
+            document.write("<td>Beta</td>");
+            document.write("<td>" + beta + "</td>");
+            document.write("</tr>");
+
+            document.write("<tr>");
+            document.write("<td>Charlie</td>");
+            document.write("<td>" + charlie + "</td>");
+            document.write("</tr>");
+        </script>
+        
+    </table>
+</body>
+</html>
